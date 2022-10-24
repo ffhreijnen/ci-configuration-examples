@@ -17,7 +17,6 @@ function rslt = PlusOne_script()
     ARGS{1}{1} = coder.typeof(0);
 
     %% Invoke MATLAB Coder.
-    cd('C:\Git\Matlab Tut\code');
     codegen -config cfg PlusOne -args ARGS{1}
 
     rslt = 1;
